@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -13,6 +15,12 @@ export default function Home() {
             Sistema interno de operación: pedidos, remisiones, entregas,
             precios semanales y cobranza por restaurante.
           </p>
+          <Link
+            href="/remisiones"
+            className="mt-6 inline-block rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800"
+          >
+            📄 Ir a Remisiones
+          </Link>
         </header>
 
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
