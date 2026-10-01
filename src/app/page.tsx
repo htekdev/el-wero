@@ -15,12 +15,20 @@ export default function Home() {
             Sistema interno de operación: pedidos, remisiones, entregas,
             precios semanales y cobranza por restaurante.
           </p>
-          <Link
-            href="/remisiones"
-            className="mt-6 inline-block rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800"
-          >
-            📄 Ir a Remisiones
-          </Link>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/remisiones"
+              className="inline-block rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800"
+            >
+              📄 Ir a Remisiones
+            </Link>
+            <Link
+              href="/productos"
+              className="inline-block rounded-lg border border-emerald-700 px-5 py-2.5 text-sm font-semibold text-emerald-800 shadow-sm hover:bg-emerald-50"
+            >
+              🥬 Ver catálogo de productos
+            </Link>
+          </div>
         </header>
 
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
